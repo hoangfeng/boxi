@@ -1,0 +1,30 @@
+page-welcome {
+	ion-content{
+		.scroll-content{ 
+			overflow: hidden;
+			padding : 0px !important;
+			margin: 0px !important;
+			img{
+				width:100%;
+				height :100%;
+				position: absolute;
+			}
+			.outDiv{
+				position: relative;
+				height: 100%;
+				widows: 100%;
+				.inDiv{
+					width: 100%;
+					position: absolute;
+					bottom: 0;
+					padding-right: 17px;
+					padding-bottom: 17px;
+					button{
+						width: 47% ;
+						height: 60px;
+					}
+				}
+			}
+		}
+	}
+}

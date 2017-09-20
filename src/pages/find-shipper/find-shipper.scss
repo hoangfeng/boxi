@@ -1,0 +1,100 @@
+page-find-shipper {
+	.suck{
+		background-image: url(../assets/img/shipper-looking.png);
+		    background-size: cover;
+	}
+	ion-header{
+		background-image: url(assets/img/shipper-looking.png);
+		height: 50%;
+		background-size: cover;
+		ion-navbar{
+
+			.toolbar-background-md{
+				background-image: url(assets/img/shipper-looking.png);
+				background-size: cover;
+				background: transparent !important;
+			}
+			ion-title{				
+				font-family: "SVNServeticaMedium";
+				.toolbar-title{
+					font-size: 18px !important;	
+				}
+			}
+		}
+		.header-extend{
+			height: 100%;
+
+		}
+	}
+	ion-content{
+		.scroll-content{
+			overflow-y: hidden;	
+			margin-left: 0px !important;
+			margin-right: 0px !important;
+			margin-bottom: 0px !important;
+			padding: 0px !important;
+			background-color: rgb(242,242,244);
+			.wrapper{
+				height: 700px;				
+				.location-picker{
+					width: 90%;
+					margin-right: 5%;
+					margin-left: 5%;
+					border-radius: 5px;
+					background-color: white;	
+					display: flex;
+					height: 11%;
+					margin-top: 10px;
+					.img-wrapper{
+						width: 15%;
+						img{
+							width: 21%;
+							height: 62%;
+							margin: 28% 32%;
+						}	
+					}					
+					.input-location{
+						width: 100%;
+						#location-start{
+							width: 98%;
+							height: 48%;
+							border: none;
+						}
+						#location-end{
+							width: 98%;
+							height: 48%;
+							border: none;
+						}
+						hr{
+							height: 2px;
+							margin: 0px !important;
+						}
+					}
+				}							
+			}			
+																
+		}
+	}
+	.logInBtnDiv{
+		background-color: color($colors, blackBtn, base); 
+		position: absolute;
+		bottom: 0;
+		height: 60px;
+		width: 100%;
+		z-index: 9999;
+		.button-text{
+			display: table;
+			width: 100%;
+			height: 100%;
+			color: white;
+			text-align: center;
+			vertical-align: center;
+			p{
+				display: table-cell;
+				vertical-align: middle;
+				
+			}
+		}
+		
+	}	
+}

@@ -1,0 +1,82 @@
+page-modal-cancel {
+    width: 80% !important;
+    height: 35% !important;
+    margin-right: 10%;
+    margin-left: 10% !important;
+    margin-top: 40%;    
+    box-shadow: 3px 3px 3px 3px rgb(194,197,199);
+    border-radius: 5px;
+    ion-content{
+	    border-radius: 5px;
+    	.scroll-content{
+	    	overflow-y: hidden;		
+	    	margin: 0px !important;
+	    	padding: 0px !important;
+	    	.header{
+	    		height: 30%;
+	    		display: flex;
+	    		min-height: 56px;	    		
+	    		border-bottom: 1px solid rgb(234,234,234);
+	    		.main-img-wrapper{
+	    			width: 25%;
+	    			img{
+	    				width: 50%;
+	    				margin-right: 25%;
+	    				margin-left: 25%;
+	    				height: 50%;
+	    				margin-top: 25%;
+	    				margin-bottom: 25%;
+	    			}
+	    		}
+	    		.text-wrapper{
+	    			width: 80%;
+	    			margin-top: 2%;
+	    			#text-header{	    				
+	    				font-size: 18px;
+	    				margin-bottom: 1px;
+	    			}
+	    			#weight{
+	    				
+	    				margin-top: 2px;
+	    				font-size: 12px;
+	    				color: rgb(138,138,138);
+	    			}
+	    		}
+    		}
+    		.content{
+    			display: block;
+    			.message{
+    				margin-top: 10%;
+    				margin-bottom: 10%;
+    				text-align: center;
+    				width: 100%;
+    				p{
+    					font-size: 14px;
+    					margin: 0px !important;
+    					margin-top: 5px;
+    				}
+    			}
+    			.button-div{
+    				display: flex;
+    				float: right;
+    				div{
+    					margin-right: 20px;
+    					margin-left: 20px;
+    				}
+    				.cancel-btn{
+    					p{
+    						font-size: 13;
+    						color: rgb(173,176,177);
+    					}
+    				}
+    				.take-btn{
+    					p{
+    						font-size: 13;
+    						font-weight: bold;
+    					}
+    				}
+    			}
+    		}
+    	}
+	}
+}

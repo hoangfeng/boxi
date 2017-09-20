@@ -1,0 +1,72 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title >Đăng Kí</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div padding class="outDiv">
+		<div class="inDiv">
+			<button>
+				<img src="././assets/img/googleBtn.png"  style="border: 1px solid rgb(223,74,50);" >
+			</button>		    
+			<button>
+				<img src="././assets/img/facebookBtn.png" style="border: 1px solid rgb(59,89,153);" >
+			</button>
+		</div>
+	</div>
+	<div class="orSymboi">
+		<img src="././assets/img/orSym.png" >
+	</div>
+
+	<ion-list>
+		<div class="div-half-size">
+			<div class="half-size-item">
+				<ion-label fixed class="half-size">Họ</ion-label>
+				<ion-item class="half-size">
+					<ion-input type="text"></ion-input>
+				</ion-item>
+			</div>
+			<div class="half-size-item second-half">
+				<ion-label fixed class="half-size">Tên</ion-label>
+				<ion-item class="half-size">
+					<ion-input type="text"></ion-input>
+				</ion-item>
+			</div>
+		</div>
+		<ion-label fixed>Email</ion-label>
+		<ion-item>
+			<ion-input type="email"></ion-input>
+		</ion-item>
+
+		<div class="div-quarter-size">
+			<ion-label fixed >Số Điện Thoại</ion-label>
+			<div class="quater-share">
+				<ion-item class="quarter-size">
+					<ion-input type="tel" maxlength="3"></ion-input>
+				</ion-item>	
+				<ion-item class="three-quarter-size">
+					<ion-input type="tel"></ion-input>
+				</ion-item>
+			</div>
+		</div>
+
+		<ion-label fixed>Mật Khẩu</ion-label>
+		<ion-item>			
+			<ion-input type="password"></ion-input>
+		</ion-item>
+	</ion-list>
+
+	<div class="logInBtnDiv" (click)="signup()">
+		<img src="././assets/img/doneBtn.png" >
+	</div>
+</ion-content>

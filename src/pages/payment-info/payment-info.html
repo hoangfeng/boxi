@@ -1,0 +1,65 @@
+<ion-header>
+
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title >Thông tin thanh toán</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+	<ion-list padding>
+		<div class="seperate">
+			<ion-label fixed>MÃ XÁC NHẬN</ion-label>
+			<ion-item>
+				<ion-input type="tel"></ion-input>
+			</ion-item>	
+		</div>
+	
+	</ion-list>
+	<div class="method-choose">
+		<p class="method-header">LỰA CHỌN PHƯƠNG THỨC THANH TOÁN</p>
+
+		<div class="method-wrapper" (click)="chooseMethod('paypal-tick')">
+			<div class="img-wrapper" >
+				<img src="././assets/img/paypal.png" >
+			</div>			
+			<p>Paypal</p>
+			<div class="method-status">
+				<img src="././assets/img/tick.png" id="paypal-tick">
+			</div>
+
+		</div>
+		<div class="method-wrapper" (click)="chooseMethod('debit-tick')">
+			<div class="img-wrapper">
+				<img src="././assets/img/credit.png" >
+			</div>			
+			<p>Credit/Debit</p>
+			<div class="method-status">
+				<img src="././assets/img/tick.png" id="debit-tick" >
+			</div>
+		</div>
+
+		<div class="method-wrapper" (click)="chooseMethod('cash-tick')">
+			<div class="img-wrapper">
+				<img src="././assets/img/cash.png" >
+			</div>			
+			<p>Cash</p>
+			<div class="method-status">
+				<img src="././assets/img/tick.png" id="cash-tick">
+			</div>
+
+		</div>
+
+
+		<div class="logInBtnDiv" padding (click)="paymentInput()">
+			<img src="././assets/img/doneBtn.png" >
+		</div>
+		
+	</div>
+	
+</ion-content>

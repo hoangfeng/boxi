@@ -1,0 +1,84 @@
+page-payment-info {
+
+	ion-header{
+
+		ion-navbar{
+			border-bottom: 1px solid color($colors, border, base);
+			.toolbar-background-md{
+				background-color: color($colors, orangeTool, base);
+			}
+			ion-title{
+				font-family: "SVNServeticaMedium";
+			}
+		}
+
+	}
+	ion-content{
+		.scroll-content{
+			overflow-y: hidden;
+			ion-list{
+				margin-bottom: 0px;
+				ion-label {
+						width: 100% !important;
+						font-size: 11px;
+						color: #999;
+					}
+				ion-item {
+					padding-left: 0px;
+					ion-input{
+						width: 100%;
+					}
+				}
+			}	
+			.method-choose{
+				overflow-y: hidden;
+				background-color: rgb(241,245,247);
+				height: 500px;
+				.method-header{
+					width: 90%;
+					margin-left: 5%;
+					margin-right: 5%;
+				}				
+				.method-wrapper{
+					border-radius: 5px;
+					width: 90%;
+					height: 50px;
+					display: flex;
+					margin: auto;
+					background-color: white;
+					box-shadow: 3px 3px 2px rgb(194,197,199);
+					margin-bottom: 10px;
+					p{
+						padding-left: 5px;
+						width: 80%;
+					}
+					.img-wrapper{
+						width: 20%;
+						float: left;
+						img{
+							height: 100%;
+							width: 100%;
+							padding: 12px 15px;
+						}
+					}
+					.method-status{
+						float: right;
+						width: 20%;
+						img{
+							display: none;
+							height: 100%;
+							width: 100%;
+							padding: 12px 15px;
+						}
+					}
+				}
+				.logInBtnDiv{
+					position: absolute;
+					bottom: 0;
+				}	
+			}
+					
+		}
+	}
+
+}

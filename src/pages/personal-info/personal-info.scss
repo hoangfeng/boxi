@@ -1,0 +1,127 @@
+page-personal-info {
+	ion-header{
+
+		ion-navbar{
+			border-bottom: 1px solid color($colors, border, base);
+			.toolbar-background-md{
+				background-color: color($colors, orangeTool, base);
+			}
+			ion-title{
+				font-family: "SVNServeticaMedium";
+			}
+		}
+	}
+	ion-content{
+		.scroll-content{
+			overflow-y: hidden;	
+			padding: 0px !important;					
+			.orSymboi{
+				position: relative;
+			}
+			ion-list{
+				.div-half-size{
+					display: flex;
+					.half-size-item{					
+						.half-size {
+							width: 97% !important;
+						}
+						ion-label {						
+							font-size: 11px;
+							color: #999;
+							margin-bottom: 0px;
+						}
+						ion-item {
+							border: 0px;
+							padding-left: 0px;
+							ion-input{
+								width: 100%;
+							}
+						}
+						.second-half{							
+							.half-size {
+								margin-left: 5% !important;
+							}
+						}
+					}					
+				}
+				.div-quarter-size{
+					.quater-share{
+						display: flex;
+						.quarter-size{
+							width: 20%;
+							padding-left: 0px;
+							ion-input{
+								width: 20%;
+							}							
+						}
+						.three-quarter-size{
+							margin-left: 5%;
+							width: 75%;							
+							padding-left: 0px;
+							.item-inner{
+								border: 0px;
+							}
+							ion-input{								
+								width: 75%;
+							}							
+						}						
+					}					
+					ion-label {						
+						font-size: 11px;
+						color: #999;
+						margin-bottom: 0px;
+					}
+					
+				}	
+				ion-label {
+						width: 100%;
+						font-size: 11px;
+						color: #999;
+						margin-bottom: 0px;
+					}
+				ion-item {
+					padding-left: 0px;
+					ion-input{
+						width: 100%;
+					}
+				}
+				.seperator-text{
+					font-weight: bold;				
+				}
+				.seperator-line{
+					color:  color($colors, hrColor, base);
+					background-color: color($colors, hrColor, base);
+					height: 1px;
+				}
+				.address-detail{
+					.address-detail-item{
+						display: flex;
+						ion-icon{
+							font-size: 22px;
+						}
+						.item-label-input{
+							padding-left: 20px;
+							width: 100%;
+							.text-input::-moz-placeholder {
+							  font-size: 11px;
+							}
+
+							.text-input:-ms-input-placeholder {
+							  font-size: 11px;
+							}
+
+							.text-input::-webkit-input-placeholder {
+							  text-indent: 0;
+							  font-size: 11px;
+							}
+						}
+					}
+				}
+							
+			}
+			.logInBtnDiv{
+				margin-top: 20px;
+			}			
+		}
+	}
+}

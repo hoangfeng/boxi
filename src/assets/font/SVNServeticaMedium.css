@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SVNServeticaMedium';
+    src: url('fonts/SVNServeticaMedium.eot');
+    src: url('fonts/SVNServeticaMedium.eot') format('embedded-opentype'),
+         url('fonts/SVNServeticaMedium.woff2') format('woff2'),
+         url('fonts/SVNServeticaMedium.woff') format('woff'),
+         url('fonts/SVNServeticaMedium.ttf') format('truetype'),
+         url('fonts/SVNServeticaMedium.svg#SVNServeticaMedium') format('svg');
+}

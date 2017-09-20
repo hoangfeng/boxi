@@ -1,0 +1,78 @@
+<ion-content padding>
+	<div class="header">
+		
+		<div class="text-wrapper">
+			<p id="text-header">Lý do hủy bỏ</p>			
+		</div>
+	</div>
+	<div class="content">
+		<div class="message">
+			<ul>
+				<li (click)="chooseMethod('i1')">
+					<p class="item-name">Hàng hóa bị mất mát</p>
+					<div class="method-status">
+						<img src="././assets/img/tick.png" id="i1" >
+					</div>
+				</li>
+				<li (click)="chooseMethod('i2')">
+					<p class="item-name">Trường hợp khẩn cấp</p>
+					<div class="method-status">
+						<img src="././assets/img/tick.png" id="i2" >
+					</div>
+				</li>
+				<li (click)="chooseMethod('i3')">
+					<p class="item-name">Trục trặc tuyến đường</p>
+					<div class="method-status">
+						<img src="././assets/img/tick.png" id="i3" >
+					</div>
+				</li>
+				<li (click)="chooseMethod('i4')">
+					<p class="item-name">Phản hồi từ lái xe</p>
+					<div class="method-status">
+						<img src="././assets/img/tick.png" id="i4" >
+					</div>
+				</li>
+				<li (click)="chooseMethod('i5')">
+					<p class="item-name">Phản hồi từ khách hàng</p>
+					<div class="method-status">
+						<img src="././assets/img/tick.png" id="i5" >
+					</div>
+				</li>
+				<li (click)="chooseMethod('i6')">
+					<p class="item-name">Biên lai thanh toán</p>
+					<div class="method-status">
+						<img src="././assets/img/tick.png" id="i6" >
+					</div>
+				</li>
+				<li (click)="chooseMethod('i7')">
+					<p class="item-name">Khuyến mại</p>
+					<div class="method-status">
+						<img src="././assets/img/tick.png" id="i7" >
+					</div>
+				</li>
+				<li (click)="chooseMethod('i8')">
+					<p class="item-name">Sự cố trục trặc tai nạn</p>
+					<div class="method-status">
+						<img src="././assets/img/tick.png" id="i8" >
+					</div>
+				</li>
+				<li (click)="chooseMethod('i9')">
+					<p class="item-name">Phương thức thanh toán</p>
+					<div class="method-status">
+						<img src="././assets/img/tick.png" id="i9" >
+					</div>
+				</li>
+			
+			</ul>
+		</div>
+		
+		<div class="button-div">
+			<div class="cancel-btn" (click)="close()">
+				<p>HỦY BỎ</p>
+			</div>
+			<div class="take-btn" (click)="confirm()">
+				<p>XONG</p>
+			</div>
+		</div>
+	</div>
+</ion-content>

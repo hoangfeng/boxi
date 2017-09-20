@@ -1,5 +1,8 @@
 {
   "name": "boxiv3",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "f20f6211",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

@@ -1,0 +1,66 @@
+page-login {
+	ion-header{
+
+		ion-navbar{
+			border-bottom: 1px solid color($colors, border, base);
+			.toolbar-background-md{
+				background-color: color($colors, orangeTool, base);
+			}
+			ion-title{
+				font-family: "SVNServeticaMedium";
+			}
+		}
+
+	}
+	ion-content{
+		.scroll-content{
+			overflow-y: hidden;			
+			.outDiv{
+				position: relative;
+				height: 80px;
+				widows: 100%;
+				padding: 0px !important;
+				.inDiv{
+					width: 100%;
+					position: absolute;
+					padding: 0px !important;		
+					button{
+						width: 48% ;
+						height: 60px;
+						padding: 0px !important;
+						margin: 0px 2px !important;
+						background-color: white;
+						img{
+							width: 100%;
+						}
+					}
+					
+				}
+			}
+			.orSymboi{
+				position: relative;
+			}
+			ion-list{
+				ion-label {
+						width: 100% !important;
+						font-size: 11px;
+						color: #999;
+					}
+				ion-item {
+					padding-left: 0px;
+					ion-input{
+						width: 100%;
+					}
+				}
+			}
+			.logInBtnDiv{
+				margin-top: 20px;
+			}
+			.forgot{
+				text-align: center;
+				margin-top: 10px;
+				color:#999;
+			}
+		}
+	}
+}

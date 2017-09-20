@@ -1,3 +1,72 @@
+ion-app._gmaps_cdv_ .nav-decor{
+  background-color: transparent !important;
+}
 page-home {
-
+	ion-header{
+		ion-navbar{
+			border-bottom: 1px solid color($colors, border, base);
+			.toolbar-background-md{
+				background-color: color($colors, orangeTool, base);
+			}
+			ion-title{
+				font-family: "SVNServeticaMedium";
+			}
+		}
+	}
+	ion-content{
+		width: 100%;
+		.scroll-content{
+			overflow-y: hidden;	
+			padding: 0px !important;
+			
+			width: 100%;		
+			#map {
+		        height: 100%;
+		        /*background-color: black;*/
+		    }
+		    iframe{
+		    	height: 100%;
+		    	width: 100%;
+		    }
+		    .inputLocation{
+	    	    width: 100%;				    				    
+				margin-top: 10px;
+				background-color: transparent;
+				position: absolute;
+				p{
+					margin: auto;
+					margin-left: 20px;
+				    img{
+				    	width: 40%;
+				    }
+   					
+				}
+		    	.input-wrapper{
+		    		width: 90%;
+		    		margin: auto;
+		    		border: 1px color($colors,borderSearchBox,base) solid;
+				    border-radius: 5px;
+			        background-color: white;
+			        display: flex;
+			        height: 50px;
+		    		ion-input{
+		    			height: 100%;		    			
+	    				z-index: 70;
+		    		}
+		    		.img-wrapper{
+		    			z-index: 100;
+		    			ion-icon{
+		    				z-index: 100;
+		    			    width: 40px;
+		    			    height: 100%;
+						    font-size: 22px;					    
+						    margin-top: 10px;
+						    margin-right: 5px;
+			    		}
+		    		}
+		    		
+		    	}
+		    }
+		}
+	}
 }

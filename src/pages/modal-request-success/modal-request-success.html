@@ -1,0 +1,26 @@
+<ion-content padding>
+	<div class="header">
+		<div class="main-img-wrapper">
+			<img src="././assets/img/tick.png" >
+		</div>
+		<div class="text-wrapper">
+			<p id="text-header">Đặt thành công</p>
+			
+		</div>
+	</div>
+	<div class="content">
+		<div class="message">
+			<p>Bạn đặt đơn hàng thành công</p>
+			<p>Tài xế sẽ tới trong vòng 6 phút</p>	
+		</div>
+		
+		<div class="button-div">
+			<div class="cancel-btn" (click)="close()">
+				<p>HỦY BỎ</p>
+			</div>
+			<div class="take-btn" (click)="findShipper()">
+				<p>OK</p>
+			</div>
+		</div>
+	</div>
+</ion-content>

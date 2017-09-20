@@ -1,18 +1,36 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <button ion-button menuToggle >
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Vị trí hiện tại</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+	<div class="inputLocation">
+		<div class="input-wrapper">
+			<p><img src="././assets/img/search-icon.png"></p>
+			<ion-input type="text" placeholder="Nhập vị trí"></ion-input>
+      <div class="img-wrapper" (click)="selectLocation()">
+        <ion-icon name="md-arrow-round-forward" item-left (click)="selectLocation()" ></ion-icon> 
+      </div>
+       
+		</div>
+	</div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+ <!--   <iframe
+    width="100%"
+    height="100%"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/view
+  ?key=AIzaSyBeXA39qGwy6N794UVLEvu2azYTA3zU_Vg
+  &center=21.036207,105.815829
+  &zoom=18&output=embed" allowfullscreen>   </iframe>-->
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBeXA39qGwy6N794UVLEvu2azYTA3zU_Vg&center=21.036207,105.815829&zoom=16&maptype=roadmap" allowfullscreen=""></iframe>
+  
+
+
+  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 </ion-content>
